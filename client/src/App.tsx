@@ -2,7 +2,7 @@ import './App.css';
 import axios from "axios";
 import Button from "./Atoms/Button/Button";
 import {useEffect, useState} from "react";
-import AlbumTable from "./Organisms/AlbumTable/AlbumTable";
+import AlbumOverview from "./Organisms/AlbumTable/AlbumOverview";
 
 const API_URL = "http://localhost:8080";
 
@@ -23,7 +23,7 @@ const App = () => {
 
   return (
       <>
-        <AlbumTable></AlbumTable>
+        <AlbumOverview albums = {albums}></AlbumOverview>
         <Button cta={"refresh"} onClick={apiCall}/>
       </>
   );
