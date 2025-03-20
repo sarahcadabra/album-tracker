@@ -17,10 +17,12 @@ export interface albumType {
 }
 
 const AlbumCard: React.FC<AlbumRowProps> = ({album}) => {
+
+    //<div className="m-6 grow-1 w-full bg-white border border-indigo-200 rounded-lg shadow-lg dark:bg-indigo-900 dark:border-indigo-800">
+    //
     return (
-            <div
-                className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
+        <div className="m-6 bg-white border border-indigo-200 rounded-lg shadow-lg dark:bg-indigo-900 dark:border-indigo-800">
+        <a href="#">
                     <img className="rounded-t-lg" src={album.imageUrl} alt=""/>
                     <div className="p-5">
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{album.title}</h5>

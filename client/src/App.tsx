@@ -22,10 +22,10 @@ const App = () => {
   }, [albums])
 
   return (
-      <>
+      <div className={"box-border"}>
         <AlbumOverview albums = {albums}></AlbumOverview>
         <Button cta={"refresh"} onClick={apiCall}/>
-      </>
+      </div>
   );
 }
 

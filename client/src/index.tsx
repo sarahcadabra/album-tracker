@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
       <Header/>
       <main>
-          <App />
+          <App/>
       </main>
       <Footer/>
   </React.StrictMode>
