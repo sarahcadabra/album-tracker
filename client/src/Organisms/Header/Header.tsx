@@ -1,7 +1,8 @@
 import React from 'react';
-const logoLight = require('./Logo_light.svg') as string;
+import logoLight from './Logo_light.svg';
 
 const Header = () => {
+    console.log(logoLight);
     return (
         <header>
             <nav className={"bg-indigo-900"}>
